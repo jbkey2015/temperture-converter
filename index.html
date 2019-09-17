@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
 </head>
+
 <body>
+    <div id="converter" class="container">
+        <h1>Temperature converter</h1>
+        <br>
+        <div id="text-and-clear">
+            <input type="text" id="temp-to-convert">
+            <button type="button" class="btn btn-light" id="clear">Clear</button>
+        </div>
+        <div id="tempButtons" class="container">
+            <input type="radio" id="fahrenheit-radio" name="temp" value="fahrenheit">Fahrenheit<br>
+            <input type="radio" id="celsius-radio" name="temp" value="celsius">Celsius<br>
+        </div>
+        <button type="button" class="btn btn-primary" id="convert-button">Convert!</button>
+        <div id="temp-zone" class="container">
+            <p id="converted"></p>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
