@@ -1,5 +1,3 @@
-console.log("main.js is linked");
-
 const toCelsius = fahrenheit => {
   let offset = fahrenheit - 32;
   let conversion = offset * (5 / 9);
