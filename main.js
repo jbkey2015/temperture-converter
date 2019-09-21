@@ -2,16 +2,30 @@ console.log("main.js is linked");
 
 const toCelsius = fahrenheit => {
   let offset = fahrenheit - 32;
-  let converted = offset * (5 / 9);
+  let conversion = offset * (5 / 9);
   document.getElementById("converted").innerHTML =
-    Math.round(converted * 100) / 100;
+    Math.round(conversion * 100) / 100;
+    if (conversion >= 90) {
+      document.getElementById('converted').style.color = 'red';
+  } else if (conversion <= 32) {
+      document.getElementById('converted').style.color = 'blue';
+  } else if (conversation > 32 && newTemp < 90) {
+      document.getElementById('converted').style.color = 'green';
+  }
 };
 
 const toFahrenheit = celsius => {
   let offset = celsius * (9 / 5);
-  let converted = offset + 32;
+  let conversion = offset + 32;
   document.getElementById("converted").innerHTML =
-    Math.round(converted * 100) / 100;
+    Math.round(conversion * 100) / 100;
+    if (conversion <= 0) {
+      document.getElementById('converted').style.color = 'blue';
+  } else if (conversion >= 32) {
+      document.getElementById('converted').style.color = 'red';
+  } else if(conversion > 0 && conversion < 32) {
+      document.getElementById('converted').style.color = 'green';
+  }
 };
 
 
