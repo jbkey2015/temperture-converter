@@ -5,8 +5,8 @@ Use this application to convert celcius and faranheit.
 
 
 ## Screenshots
-![Temperature Converter Preview]()
-![Temperature Converter Preview]()
+![Temperature Converter Preview](https://raw.githubusercontent.com/jbkey2015/temperture-converter/master/screenshots/Annotation%202019-09-30%20181436.png)
+![Temperature Converter Preview](https://raw.githubusercontent.com/jbkey2015/temperture-converter/master/screenshots/Annotation%202019-09-30%20181602.png)
 
 ## How to run
 * Clone down this project
