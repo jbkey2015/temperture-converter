@@ -3,11 +3,11 @@ const toCelsius = fahrenheit => {
   let conversion = offset * (5 / 9);
   document.getElementById("converted").innerHTML =
     Math.round(conversion * 100) / 100;
-    if (conversion >= 90) {
+    if (conversion >= 32) {
       document.getElementById('converted').style.color = 'red';
-  } else if (conversion <= 32) {
+  } else if (conversion <= 0) {
       document.getElementById('converted').style.color = 'blue';
-  } else if (conversation > 32 && newTemp < 90) {
+  } else if (conversation > 0 && newTemp < 32) {
       document.getElementById('converted').style.color = 'green';
   }
 };
@@ -17,11 +17,11 @@ const toFahrenheit = celsius => {
   let conversion = offset + 32;
   document.getElementById("converted").innerHTML =
     Math.round(conversion * 100) / 100;
-    if (conversion <= 0) {
+    if (conversion <= 90) {
       document.getElementById('converted').style.color = 'blue';
   } else if (conversion >= 32) {
       document.getElementById('converted').style.color = 'red';
-  } else if(conversion > 0 && conversion < 32) {
+  } else if(conversion > 32 && conversion < 90) {
       document.getElementById('converted').style.color = 'green';
   }
 };
